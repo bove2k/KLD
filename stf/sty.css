@@ -1,0 +1,69 @@
+body  {font: normal 85% Arial, Helvetica, sans-serif; color: #e3e3e3; background: url(../images/background.gif); margin: 0; padding: 0;}
+
+#head   { display: block; margin-left: 150px; color: #fff; }
+#head h1 span  {font-size: 70%; padding-left: 35px; font-weight: normal;}
+#splash { width: 100vw; height: 185px; max-height: 185px; background-color: #666666; border-top: 2px solid #CCCCCC; border-bottom: 2px solid #CCCCCC; margin: 0; padding: 0; overflow: hidden; }
+ #splash #nav  {float: left; width: 128px; margin: 0; padding: 0; border-bottom: 1px solid #003366;}
+ #splash #nav a {font-weight: bold; color: #e5e5e5; text-decoration: none; background-color: #666666; border: 1px solid #003366; border-bottom: 0; border-left: 1em solid #003366; display: block; padding: 10px 7px; margin: 0;}
+ #splash #nav a.hi { background-color: #888; border-left: 1em solid #069; }
+ #splash #nav a:visited {color: #C9C9C9; text-decoration: none;}
+ #splash #nav a:hover   {color: #333333; background-color: #DFDFDF; border-left: 1em solid #000033; text-decoration: none;}
+ #splashimg  {white-space: nowrap;}
+ #splashimg a { display: inline-block; }
+ #splashimg img { height: 187px; }
+a         {color: #0099CC; text-decoration: none;}
+a:visited {color: #0099CC; text-decoration: none;}
+a:hover   {color: #0099CC; text-decoration: underline;}
+td h3  {font-size: 110%; margin-bottom: 8px; text-align: center;}
+td ul  {margin-left: 12px; padding-left: 14px;}
+td ul li  {padding-bottom: 2px;}
+
+.clear  {clear: both;}
+
+#main  {margin-left: 150px; max-width: 1450px; width: calc(100vw - 165px); padding-right: 15px; }
+#main #col1 {float: left; width: 50%;}
+#main #col2 {float: right; text-align: center; width: 45%; margin-right: 20px;}
+ #col2 h1  {font-size: 160%; color: #EFE8FF;}
+ #col2 h1 i  {font-size: 75%; color: #CFCFDF; padding-right: 3px;}
+ #col2 #testi  {margin: 27px 10px 16px 10px; color: #FFD2D2; line-height: 1.3; font: italic 105% Georgia, "Times New Roman", Times, serif;}
+ 
+#main h2 {font-size: 120%; margin-bottom: 8px;}
+#main p {margin: 4px 0 10px 0;}
+
+form      {width: 100%; padding: 20px 0; font: normal 90% Tahoma, Arial, sans-serif; text-align: left;}
+form ul   {margin: 0 20px 40px 20px; padding: 0; list-style-type: none;}
+form li   {margin: 3px 10px; padding: 3px; float: left;}
+form p    {text-align: justify; margin: 0 0 8px 0; font-size: 88%; width: 90%;}
+form p.smaller   {font-size: 10px; margin: 8px 0 0 0;}
+
+form#join {width: 555px; padding: 8px 0 20px 0;}
+form#join ul   {margin: 0 20px 40px 5px;}
+form#join li   {margin: 3px 5px;}
+
+form label    {font-weight: bold; margin: 7px 0 0 0; font-size: 95%; display: block;}
+form label.length {width: 105%; font-weight: normal; margin: 5px 0;}
+form input, textarea  {font: 115% normal Arial, Helvetica, sans-serif; display: block; width: 100%; margin: 0; background-color: #D8DEE4; color: #003366; border: #999; border-radius: 2px; padding: 2px 5px; line-height: 2rem; }
+
+form input[type="submit"], form input#submit2 {font-size: 115%; margin: 20px 0;	line-height: 1.67rem; padding: 0; background-color: #CCCCCC; width: 105px; }
+form .herror  {font-size: 13px; color: #AA2222;}
+form .error   {font-size: 11px; padding-left: 40px; color: #AA2222;} 
+
+#foot {margin-left: 150px; max-width: 1450px; width: calc(100vw - 165px); padding-right: 15px; border-top: 1px solid #999999; padding-top: 0; font-family: Arial, Helvetica, sans-serif; font-size: 75%; color: #999999}
+
+@media(max-width: 767px) {
+	body { font-size: 111%; background: #333 none; }
+	#head { margin-left: 0; text-align: center; }
+	#head h1 { font-size: 22px; }
+	#head h1 span { padding-left: 0; display: block; }
+	#splash { height: 156px; position: relative; }
+	#splash.open { overflow: visible; }
+	#splash #nav { float: none; width: 100%; position: absolute; height: 0; overflow: hidden; }
+	#splash.open #nav { height: 212px; }
+	
+	#splash #nav-btn:before { content:'\2630'; display: block; height: 32px; text-align: center; 
+							font-size: 32px; line-height: 0.75; background: #333; }
+	#splashimg { white-space: nowrap; max-width: 100%; overflow: hidden; }
+	#splashimg img { height: 125px; }
+	#main, #foot { margin-left: 0; padding: 0 20px; width: 100vw; box-sizing: border-box; }
+	#main #col1, #main #col2 { float: none; width: 100%; }
+}
